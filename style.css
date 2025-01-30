@@ -5,5 +5,5 @@ body{
 
 #board {
     background-image: url("Images/flappybirdbg.png");
-    cursor: default;
+    cursor: pointer;
 }
