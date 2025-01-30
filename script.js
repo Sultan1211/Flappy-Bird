@@ -3,10 +3,10 @@ let boardHeight = 640;
 let backgroundImg = new Image(); 
 backgroundImg.src = "./Images/flappybirdbg.png"; 
 let inputLocked = false; 
-let score = 0; // Added missing score variable
+let score = 0;
 
 document.addEventListener("keydown", handleKeyDown); 
-document.addEventListener("mousedown", handleMouseDown); // Added mouse click support
+document.addEventListener("mousedown", handleMouseDown);
 
 let GAME_STATE = {
     MENU: "menu",
@@ -132,7 +132,7 @@ function renderMenu() {
 }
 
 function renderGame() {
-    if (inputLocked) return; // Prevent updates during delay
+    if (inputLocked) return; 
 
     velocityY += gravity;
     bird.y = Math.max(bird.y + velocityY, 0); 
